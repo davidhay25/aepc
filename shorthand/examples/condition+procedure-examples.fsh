@@ -25,3 +25,28 @@ Title: "Conformed diagnosis of Polio"
 * asserter = Reference(aupc-practitioner1)
 * subject = Reference(aupc-patient1)
 
+Instance: aupc-condition2
+InstanceOf: AUPrimaryCareCondition
+//BaseType: Condition
+Description: "Asthma"
+Title: "Conformed diagnosis of Asthma"
+
+* text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Ashma</div>"
+
+* clinicalStatus.coding.system =  "http://terminology.hl7.org/CodeSystem/condition-clinical"
+* clinicalStatus.coding.code = #active
+
+* verificationStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+* verificationStatus.coding.code = #confirmed
+
+* category.coding.system = $SNOMED
+* category.coding.code = #439401001
+
+* code.coding.system = $SNOMED
+* code.coding.code = #138875005
+
+* onsetDateTime = "1989-03-05"
+
+* asserter = Reference(aupc-patient1)
+* subject = Reference(aupc-patient1)

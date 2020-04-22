@@ -22,22 +22,22 @@ Usage: #Example
 * date = "2020-04-21"
 
 * section[medicalHistoryList].entry = Reference(aupc-medicalHistoryEmpty) //defined in supporting.fsh
-* section[medicalHistoryList].code = http://loinc.org#11348-0
+* section[medicalHistoryList].code = http://loinc.org#11348-0 "Medical History"
 * section[medicalHistoryList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No significant medical history</div>"
 * section[medicalHistoryList].text.status = #generated
 
 * section[adverseReactionList].entry = Reference(aupc-adverseReactionEmpty) //defined in supporting.fsh
-* section[adverseReactionList].code = http://loinc.org#48765-2
+* section[adverseReactionList].code = http://loinc.org#48765-2 "Adverse Reactions"
 * section[adverseReactionList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Allergies</div>"
 * section[adverseReactionList].text.status = #generated
 
 * section[vaccinationList].entry = Reference(aupc-immunizationEmpty) //defined in supporting.fsh
-* section[vaccinationList].code = http://loinc.org#41291-6
+* section[vaccinationList].code = http://loinc.org#41291-6 "Immunizations"
 * section[vaccinationList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No known immunizations</div>"
 * section[vaccinationList].text.status = #generated
 
 * section[medicineList].entry = Reference(aupc-medicineListEmpty) //defined in supporting.fsh
-* section[medicineList].code = http://loinc.org#10160-0
+* section[medicineList].code = http://loinc.org#10160-0 "Medication List"
 * section[medicineList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No known medications</div>"
 * section[medicineList].text.status = #generated
 

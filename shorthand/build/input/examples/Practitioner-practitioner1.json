@@ -1,9 +1,0 @@
-{
-  "resourceType": "Practitioner",
-  "id": "practitioner1",
-  "name": [
-    {
-      "text": "Marcus Welby"
-    }
-  ]
-}

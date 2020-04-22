@@ -1,6 +1,6 @@
 {
   "resourceType": "Composition",
-  "id": "composition1",
+  "id": "aupc-compositionComplete",
   "meta": {
     "profile": [
       "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
@@ -19,18 +19,18 @@
   "title": "Practice to Practice Patient Summary",
   "author": [
     {
-      "reference": "practitioner1"
+      "reference": "Practitioner/aupc-practitioner1"
     }
   ],
   "subject": {
-    "reference": "patient1"
+    "reference": "Patient/aupc-patient1"
   },
   "date": "2020-04-21",
   "section": [
     {
       "entry": [
         {
-          "reference": "medicalHistoryEmpty"
+          "reference": "aupc-medicalHistoryList"
         }
       ],
       "code": {
@@ -42,14 +42,14 @@
         ]
       },
       "text": {
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No significant medical history</div>",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Polio</div>",
         "status": "generated"
       }
     },
     {
       "entry": [
         {
-          "reference": "adverseReactionList"
+          "reference": "List/aupc-adverseReactionList"
         }
       ],
       "code": {
@@ -61,14 +61,14 @@
         ]
       },
       "text": {
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No significant medical history</div>",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Peanuts and others</div>",
         "status": "generated"
       }
     },
     {
       "entry": [
         {
-          "reference": "immunizationEmpty"
+          "reference": "List/aupc-immunizationEmpty"
         }
       ],
       "code": {
@@ -87,7 +87,7 @@
     {
       "entry": [
         {
-          "reference": "medicineListEmpty"
+          "reference": "List/aupc-medicineListEmpty"
         }
       ],
       "code": {

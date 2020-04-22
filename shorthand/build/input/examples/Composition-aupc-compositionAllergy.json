@@ -17,13 +17,19 @@
     ]
   },
   "title": "Practice to Practice Patient Summary",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient with Alllergy list only</div>"
+  },
   "author": [
     {
-      "reference": "Practitioner/aupc-practitioner1"
+      "reference": "Practitioner/aupc-practitioner1",
+      "display": "Marcus Welby"
     }
   ],
   "subject": {
-    "reference": "Patient/aupc-patient1"
+    "reference": "Patient/aupc-patient1",
+    "display": "John Doe"
   },
   "date": "2020-04-21",
   "section": [
@@ -37,7 +43,8 @@
         "coding": [
           {
             "code": "11348-0",
-            "system": "http://loinc.org"
+            "system": "http://loinc.org",
+            "display": "Medical History"
           }
         ]
       },
@@ -56,7 +63,8 @@
         "coding": [
           {
             "code": "48765-2",
-            "system": "http://loinc.org"
+            "system": "http://loinc.org",
+            "display": "Adverse Reactions"
           }
         ]
       },
@@ -75,7 +83,8 @@
         "coding": [
           {
             "code": "41291-6",
-            "system": "http://loinc.org"
+            "system": "http://loinc.org",
+            "display": "Immunizations"
           }
         ]
       },
@@ -94,7 +103,8 @@
         "coding": [
           {
             "code": "10160-0",
-            "system": "http://loinc.org"
+            "system": "http://loinc.org",
+            "display": "Medication List"
           }
         ]
       },

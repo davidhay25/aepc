@@ -336,6 +336,14 @@
       },
       {
         "reference": {
+          "reference": "Composition/aupc-compositionComplete"
+        },
+        "name": "Example composition with all sections populated",
+        "description": "The composition for a patient with an allergy list only. Other required sections are present with no data.\nThis shows ONLY required sectioons. ",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
+      },
+      {
+        "reference": {
           "reference": "Composition/aupc-compositionEmpty"
         },
         "name": "Example composition with no data",
@@ -352,6 +360,14 @@
       },
       {
         "reference": {
+          "reference": "Condition/aupc-condition2"
+        },
+        "name": "Conformed diagnosis of Asthma",
+        "description": "Asthma",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareCondition"
+      },
+      {
+        "reference": {
           "reference": "List/aupc-immunizationEmpty"
         },
         "name": "No significant history",
@@ -362,13 +378,6 @@
           "reference": "List/aupc-medicalHistoryEmpty"
         },
         "name": "No significant history",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList"
-      },
-      {
-        "reference": {
-          "reference": "List/aupc-medicalHistoryList"
-        },
-        "name": "Medical History List",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList"
       },
       {

@@ -1,7 +1,7 @@
-Instance: aupc-compositionAllergy
+Instance: aupc-compositionComplete
 InstanceOf: AUPrimaryCareComposition
 //BaseType: AllergyIntolerance 
-Title: "Example composition with allergy data"
+Title: "Example composition with all sections populated"
 Description: """
 The composition for a patient with an allergy list only. Other required sections are present with no data.
 This shows ONLY required sectioons. 
@@ -22,7 +22,7 @@ Usage: #Example
 
 * section[adverseReactionList].entry = Reference(aupc-adverseReactionList)  //defined below
 * section[adverseReactionList].code = http://loinc.org#48765-2
-* section[adverseReactionList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Peanuts & others</div>"
+* section[adverseReactionList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Peanuts and others</div>"
 * section[adverseReactionList].text.status = #generated
 
 * section[vaccinationList].entry = Reference(aupc-immunizationEmpty) //defined in supporting.fsh
@@ -37,16 +37,7 @@ Usage: #Example
 
 
 
-Instance: aupc-medicalHistoryList
-InstanceOf: AUPrimaryCareMedicalHistoryList
-//BaseType: List 
-Title: "Medical History List"
-Usage: #example
 
-* mode = #snapshot
-* status = #current
-* subject = Reference(aupc-patient1)
-* entry.item = Reference(aupc-condition1)
 
 
 Instance: aupc-adverseReactionList
