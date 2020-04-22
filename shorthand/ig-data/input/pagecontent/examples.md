@@ -1,0 +1,21 @@
+### Examples by Type
+
+| Type | Id | Title | Description |
+| --- | --- | --- | --- |
+| AUPrimaryCareAllergyIntolerance | [aupc-allergy1](AllergyIntolerance-aupc-allergy1.html) | Oesophagitis caused by dairy food | Oesophagitis caused by dairy food |
+| AUPrimaryCareAllergyIntolerance | [aupc-allergy2](AllergyIntolerance-aupc-allergy2.html) | Peanut allergy | Urticaria as a result of a Peanut allergy |
+| AUPrimaryCareAllergyIntolerance | [aupc-allergy3](AllergyIntolerance-aupc-allergy3.html) | Penicillin anaphylaxis | Penicillin anaphylaxis |
+| AUPrimaryCareAllergyIntolerance | [aupc-allergy4](AllergyIntolerance-aupc-allergy4.html) | Alpha blocker rash | A rash as a consequence to Alpha adrenergic blockers |
+| AUPrimaryCareComposition | [aupc-compositionAllergy](AllergyIntolerance-aupc-compositionAllergy.html) | Example composition with allergy data |  |
+| AUPrimaryCareComposition | [aupc-compositionAllergy](AllergyIntolerance-aupc-compositionAllergy.html) | Example composition with allergy data |  |
+| AUPrimaryCareComposition | [aupc-compositionEmpty](Composition-aupc-compositionEmpty.html) | Example composition with no data |  |
+| AUPrimaryCareAllergyIntoleranceList | aupc-adverseReactionList | Allergy List |  |
+| AUPrimaryCareAllergyIntoleranceList | [aupc-adverseReactionList](List-aupc-adverseReactionList.html) | Allergy List |  |
+| AUPrimaryCareAllergyIntoleranceList | [aupc-adverseReactionEmpty](List-aupc-adverseReactionEmpty.html) | No significant history |  |
+| AUPrimaryCareMedicalHistoryList | [aupc-medicalHistoryList](List-aupc-medicalHistoryList.html) | Medical History List |  |
+| AUPrimaryCareMedicalHistoryList | [aupc-medicalHistoryEmpty](List-aupc-medicalHistoryEmpty.html) | No significant history |  |
+| AUPrimaryCareCondition | [aupc-condition1](Condition-aupc-condition1.html) | Conformed diagnosis of Polio | Polio |
+| Patient | [aupc-patient1](Patient-aupc-patient1.html) | Patient | Supporting patient for examples |
+| Practitioner | [aupc-practitioner1](Practitioner-aupc-practitioner1.html) | Practitioner | Supporting practitioner for examples |
+| AUPrimaryCareImmunisationList | [aupc-immunizationEmpty](List-aupc-immunizationEmpty.html) | No significant history |  |
+| AUPrimaryCareMedicineList | [aupc-medicineListEmpty](List-aupc-medicineListEmpty.html) | No significant history |  |

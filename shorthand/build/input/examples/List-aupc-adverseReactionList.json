@@ -1,0 +1,36 @@
+{
+  "resourceType": "List",
+  "id": "aupc-adverseReactionList",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareAllergyIntoleranceList"
+    ]
+  },
+  "status": "current",
+  "mode": "snapshot",
+  "subject": {
+    "reference": "Patient/aupc-patient1"
+  },
+  "entry": [
+    {
+      "item": {
+        "reference": "AllergyIntolerance/aupc-allergy1"
+      }
+    },
+    {
+      "item": {
+        "reference": "AllergyIntolerance/aupc-allergy2"
+      }
+    },
+    {
+      "item": {
+        "reference": "AllergyIntolerance/aupc-allergy3"
+      }
+    },
+    {
+      "item": {
+        "reference": "AllergyIntolerance/aupc-allergy4"
+      }
+    }
+  ]
+}

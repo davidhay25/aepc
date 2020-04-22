@@ -1,0 +1,9 @@
+{
+  "resourceType": "Patient",
+  "id": "aupc-patient1",
+  "name": [
+    {
+      "text": "John Doe"
+    }
+  ]
+}

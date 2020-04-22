@@ -1,0 +1,9 @@
+{
+  "resourceType": "Practitioner",
+  "id": "aupc-practitioner1",
+  "name": [
+    {
+      "text": "Marcus Welby"
+    }
+  ]
+}

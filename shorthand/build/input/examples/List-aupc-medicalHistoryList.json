@@ -1,0 +1,21 @@
+{
+  "resourceType": "List",
+  "id": "aupc-medicalHistoryList",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList"
+    ]
+  },
+  "status": "current",
+  "mode": "snapshot",
+  "subject": {
+    "reference": "Patient/aupc-patient1"
+  },
+  "entry": [
+    {
+      "item": {
+        "reference": "Condition/aupc-condition1"
+      }
+    }
+  ]
+}

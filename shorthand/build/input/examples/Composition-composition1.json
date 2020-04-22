@@ -1,0 +1,107 @@
+{
+  "resourceType": "Composition",
+  "id": "composition1",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
+    ]
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "code": "11503-0",
+        "system": "http://loinc.org",
+        "display": "Medical Records"
+      }
+    ]
+  },
+  "title": "Practice to Practice Patient Summary",
+  "author": [
+    {
+      "reference": "practitioner1"
+    }
+  ],
+  "subject": {
+    "reference": "patient1"
+  },
+  "date": "2020-04-21",
+  "section": [
+    {
+      "entry": [
+        {
+          "reference": "medicalHistoryEmpty"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "11348-0",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No significant medical history</div>",
+        "status": "generated"
+      }
+    },
+    {
+      "entry": [
+        {
+          "reference": "adverseReactionList"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "48765-2",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No significant medical history</div>",
+        "status": "generated"
+      }
+    },
+    {
+      "entry": [
+        {
+          "reference": "immunizationEmpty"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "41291-6",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No significant medical history</div>",
+        "status": "generated"
+      }
+    },
+    {
+      "entry": [
+        {
+          "reference": "medicineListEmpty"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "10160-0",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No significant medical history</div>",
+        "status": "generated"
+      }
+    }
+  ]
+}
