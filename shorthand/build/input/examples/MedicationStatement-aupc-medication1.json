@@ -1,0 +1,9 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "aupc-medication1",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
+    ]
+  }
+}

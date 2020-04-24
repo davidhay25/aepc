@@ -3,8 +3,7 @@
 
 //Aliases
 Alias: $SNOMED = http://snomed.info/sct
-
-
+Alias: $LOINC = http://loinc.org
 
 
 Instance: aupc-patient1

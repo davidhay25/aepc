@@ -100,3 +100,16 @@ Description: "A rash as a consequence to Alpha adrenergic blockers"
 * reaction.manifestation.text = "rash"
 * reaction.severity = #moderate
 
+Instance: aupc-adverseReactionList
+InstanceOf: AUPrimaryCareAllergyIntoleranceList
+//BaseType: List 
+Title: "Allergy List"
+Usage: #example
+
+* mode = #snapshot
+* status = #current
+* subject = Reference(aupc-patient1)
+* entry.item = Reference(aupc-allergy1)
+* entry[1].item = Reference(aupc-allergy2)
+* entry[2].item = Reference(aupc-allergy3)
+* entry[3].item = Reference(aupc-allergy4)

@@ -94,6 +94,11 @@
         "id": "MedicationStatement.dosage.asNeededCodeableConcept",
         "path": "MedicationStatement.dosage.asNeededCodeableConcept",
         "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.asNeededBoolean",
+        "path": "MedicationStatement.dosage.asNeededBoolean",
+        "mustSupport": true
       }
     ]
   }

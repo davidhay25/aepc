@@ -1,4 +1,4 @@
-// PROFILES 
+// Immunization Profiles and Immunization list 
 
 Profile: AUPrimaryCareImmunisation
 Parent: http://hl7.org.au/fhir/StructureDefinition/au-immunization

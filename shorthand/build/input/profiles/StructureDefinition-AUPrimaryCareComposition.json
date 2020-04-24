@@ -356,6 +356,41 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Composition.section:pregnancyHistory",
+        "path": "Composition.section",
+        "sliceName": "pregnancyHistory",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "patternUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1,
+        "fixedCode": "10163-4"
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.mode",
+        "path": "Composition.section.mode",
+        "patternCode": "snapshot"
+      },
+      {
+        "id": "Composition.section:pregnancyHistory.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Observation"
+            ]
+          }
+        ],
+        "mustSupport": true
       }
     ]
   }

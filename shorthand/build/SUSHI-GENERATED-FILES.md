@@ -21,6 +21,9 @@ lists those files generated from project configs or the contents in the ig-data 
 | input/ImplementationGuide-au.csiro.fhir.au-primarycare.json | generated | ../ig-data/ig.ini, ../package.json, {all input resources and pages} |
 | input/ignoreWarnings.txt                                    | generated |                                                                     |
 | package-list.json                                           | generated | ../package.json                                                     |
+| input/examples/Bundle-aupc-compositionAllergy.json          | copied    | ../ig-data/input/examples/Bundle-aupc-compositionAllergy.json       |
+| input/examples/Bundle-aupc-compositionComplete.json         | copied    | ../ig-data/input/examples/Bundle-aupc-compositionComplete.json      |
+| input/examples/Bundle-aupc-compositionEmpty.json            | copied    | ../ig-data/input/examples/Bundle-aupc-compositionEmpty.json         |
 | input/includes/menu.xml                                     | copied    | ../ig-data/input/includes/menu.xml                                  |
 | input/pagecontent/.DS_Store                                 | copied    | ../ig-data/input/pagecontent/.DS_Store                              |
 | input/pagecontent/examples.md                               | copied    | ../ig-data/input/pagecontent/examples.md                            |

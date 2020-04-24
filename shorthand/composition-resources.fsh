@@ -42,7 +42,8 @@ Description: "This profile defines a composition structure that includes core lo
     medicineList 1..1 and
     clinicalSynopsis 0..1 and
     familyHistory 0..1 and
-    socialHistory 0..1
+    socialHistory 0..1 and
+    pregnancyHistory 0..1
 
 //* section 1..*
 * section.section 0..0          //can't have sub sections
@@ -98,3 +99,9 @@ Description: "This profile defines a composition structure that includes core lo
 * section[socialHistory].entry only Reference(https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialHistoryList)
 * section[socialHistory].entry MS
 
+* section[pregnancyHistory].code.coding.system = "http://loinc.org"
+* section[pregnancyHistory].code.coding.code = #10163-4 (exactly)
+//* section[pregnancyHistory].code = $LOINC#10163-4 (exactly)
+* section[pregnancyHistory].mode = #snapshot
+* section[pregnancyHistory].entry only Reference(Observation)
+* section[pregnancyHistory].entry MS

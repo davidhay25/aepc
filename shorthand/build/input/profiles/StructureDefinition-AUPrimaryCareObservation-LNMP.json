@@ -71,6 +71,7 @@
         "id": "Observation.code.coding:lnmpSnomed",
         "path": "Observation.code.coding",
         "sliceName": "lnmpSnomed",
+        "min": 0,
         "patternCoding": {
           "code": "248993009",
           "system": "http://snomed.info/sct"

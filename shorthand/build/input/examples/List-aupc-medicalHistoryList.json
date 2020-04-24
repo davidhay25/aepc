@@ -16,6 +16,21 @@
       "item": {
         "reference": "Condition/aupc-condition1"
       }
+    },
+    {
+      "item": {
+        "reference": "Condition/aupc-condition2"
+      }
+    },
+    {
+      "item": {
+        "reference": "Procedure/aupc-procedure1"
+      }
+    },
+    {
+      "item": {
+        "reference": "Procedure/aupc-procedure2"
+      }
     }
   ]
 }

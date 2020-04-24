@@ -34,8 +34,11 @@ Description: "This profile defines an allergy intolerance structure that include
 * reaction.substance 1..1
 * reaction.substance MS
 
-/*  dh-todo - once the dependency has been sorted...
+* reaction.manifestation from http://aehrc.com/valueset/reaction-manifestation (preferred)
+* reaction.substance from http://aehrc.com/valueset/reaction-substance (preferred)
 
+
+/*  dh-todo - once the dependency has been sorted...
 * reaction.substance.coding[snomedSubstance] MS
 
 * reaction.manifestation MS

@@ -1,4 +1,6 @@
 
+//condition and procedure examples. Called 'medical history' in the IG
+//Includes a List that references all of them
 Instance: aupc-condition1
 InstanceOf: AUPrimaryCareCondition
 //BaseType: Condition
@@ -43,10 +45,55 @@ Title: "Conformed diagnosis of Asthma"
 * category.coding.system = $SNOMED
 * category.coding.code = #439401001
 
-* code.coding.system = $SNOMED
-* code.coding.code = #138875005
+//* code.coding.system = $SNOMED
+//* code.coding.code = #138875005
+* code = $SNOMED#138875005 "Asthma"
 
 * onsetDateTime = "1989-03-05"
 
 * asserter = Reference(aupc-patient1)
 * subject = Reference(aupc-patient1)
+
+Instance: aupc-procedure1
+InstanceOf: AUPrimaryCareProcedure
+//BaseType: Procedure
+Description: "Stent, coronary artery"
+Title: "Stent, coronary artery"
+
+* text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Stent, coronary artery</div>"
+* status = #completed
+* subject = Reference(aupc-patient1)
+* code = $SNOMED#36969009 "Placement of stent in coronary artery"
+* code.coding[1] = http://oridashi.com.au/system/code/bestpracticeterm#3579 "Stent, coronary artery"
+
+* performedPeriod.start = "2017-12-28"
+
+Instance: aupc-procedure2
+InstanceOf: AUPrimaryCareProcedure
+//BaseType: Procedure
+Description: "Plantar wart excision"
+Title: "Plantar wart excision"
+
+* text.status = #generated
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Plantar wart excision</div>"
+* status = #completed
+* subject = Reference(aupc-patient1)
+
+* code = http://oridashi.com.au/system/code/medicaldirectorterm#surg.foot@planw "Plantar wart excision"
+* performedPeriod.start = "2017-12-28"
+
+//The list that references all of the medicalhistory resources - Condition and procedure
+Instance: aupc-medicalHistoryList
+InstanceOf: AUPrimaryCareMedicalHistoryList
+//BaseType: List 
+Title: "Medical History List"
+Usage: #example
+
+* mode = #snapshot
+* status = #current
+* subject = Reference(aupc-patient1)
+* entry.item = Reference(aupc-condition1)
+* entry[1].item = Reference(aupc-condition2)
+* entry[2].item = Reference(aupc-procedure1)
+* entry[3].item = Reference(aupc-procedure2)

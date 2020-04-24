@@ -1,0 +1,31 @@
+{
+  "resourceType": "List",
+  "id": "aupc-immunizationList",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisationList"
+    ]
+  },
+  "status": "current",
+  "mode": "snapshot",
+  "subject": {
+    "reference": "Patient/aupc-patient1"
+  },
+  "entry": [
+    {
+      "item": {
+        "reference": "Immunization/aupc-immunization1"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/aupc-immunization2"
+      }
+    },
+    {
+      "item": {
+        "reference": "Immunization/aupc-immunization3"
+      }
+    }
+  ]
+}

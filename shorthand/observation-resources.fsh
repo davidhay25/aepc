@@ -42,8 +42,12 @@ Description: "The gestational age from an ultrasound scan"
 * partOf ^slicing.discriminator.path = "reference"
 * partOf ^slicing.rules = #open
 * partOf 1..1
-* partOf contains ultrasoundScan 1..1
-* partOf[ultrasoundScan] only Reference(https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure-UltrasoundScanObstetric)
+//todo - referencing by profile doesn't seem to work...
+//* partOf contains ultrasoundScan 1..1
+//* partOf[ultrasoundScan] only Reference(Procedure)
+//* partOf[ultrasoundScan] only Reference(https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure-UltrasoundScanObstetric)
+//*  partOf[ultrasoundScan] only Reference(AUPrimaryCareProcedure-UltrasoundScanObstetric)
+
 * status = #final
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
@@ -53,6 +57,11 @@ Description: "The gestational age from an ultrasound scan"
 * code.coding[gestationSnomed] = http://snomed.info/sct#57036006
 * subject 1..1
 * subject only Reference(http://hl7.org/fhir/StructureDefinition/Patient)
+
+* effective[x] 1..1  //dh - observation is meaningless without a perfromed data todo - in theory could get from procedurer
+
+
+//todo - ?slice to quantity
 * value[x] 1..1
 
 Profile: ExpectedDateOfDelivery
@@ -61,11 +70,19 @@ Id: AUPrimaryCareObservation-EDD
 Title: "Expected Date of Delivery"
 Description: "The date that delivery is due. Method of estimation not specified."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-EDD"
+* status = #final
+
+
+/* todo - generates a sushi error
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open
 * code.coding contains sliceCoding 1..1
 * code.coding[sliceCoding] from http://aehrc.com/valueset/expecteddateofdeliverytypes (required)
+*/
+
+* code.coding from http://aehrc.com/valueset/expecteddateofdeliverytypes (preferred)
+
 * subject 1..1
 
 Profile: LastNormalMenstrualPeriod
@@ -79,7 +96,7 @@ Description: "The date of the womand last normal menstrual period"
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open
 * code.coding 1..1
-* code.coding contains lnmpSnomed 1..1
+* code.coding contains lnmpSnomed 0..1      //todo  - get a sushi error with 1..1
 * code.coding[lnmpSnomed] = http://snomed.info/sct#248993009
 * code.coding contains lnmpLoinc 0..1
 * code.coding[lnmpLoinc] = http://loinc.org#8665-2

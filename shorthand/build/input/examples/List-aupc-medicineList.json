@@ -1,0 +1,18 @@
+{
+  "resourceType": "List",
+  "id": "aupc-medicineList",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList"
+    ]
+  },
+  "status": "current",
+  "mode": "snapshot",
+  "entry": [
+    {
+      "item": {
+        "reference": "MedicationStatement/aupc-medicationstatement1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "resourceType": "Procedure",
+  "id": "aupc-procedureUltraSound",
+  "subject": {
+    "reference": "Patient/aupc-patient1"
+  },
+  "status": "complete",
+  "code": {
+    "coding": [
+      {
+        "code": "268445003",
+        "system": "http://snomed.info/sct"
+      }
+    ]
+  },
+  "performedDateTime": "2020-01-01"
+}

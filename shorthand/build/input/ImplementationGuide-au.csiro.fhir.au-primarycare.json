@@ -368,10 +368,88 @@
       },
       {
         "reference": {
+          "reference": "Observation/aupc-edd1"
+        },
+        "name": "Estimated Date of Delivery",
+        "description": "Estimated Date of Delivery",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-EDD"
+      },
+      {
+        "reference": {
+          "reference": "FamilyMemberHistory/aupc-familyHistory1"
+        },
+        "name": "Father with diabetes",
+        "description": "Father with diabetes",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistory"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-familyHistoryList"
+        },
+        "name": "Family History List",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistoryList"
+      },
+      {
+        "reference": {
+          "reference": "Observation/aupc-gestationOnScan1"
+        },
+        "name": "Gestation on scan ",
+        "description": "Gestation on scan",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-GestationOnScan"
+      },
+      {
+        "reference": {
+          "reference": "Observation/aupc-gravidity1"
+        },
+        "name": "Gravidity",
+        "description": "Gravidity",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-gravidity"
+      },
+      {
+        "reference": {
+          "reference": "Immunization/aupc-immunization1"
+        },
+        "name": "MMR Vaccination",
+        "description": "MMR",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation"
+      },
+      {
+        "reference": {
+          "reference": "Immunization/aupc-immunization2"
+        },
+        "name": "MMR Vaccination",
+        "description": "MMR",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation"
+      },
+      {
+        "reference": {
+          "reference": "Immunization/aupc-immunization3"
+        },
+        "name": "Hepatitis",
+        "description": "Hepatitis ",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation"
+      },
+      {
+        "reference": {
           "reference": "List/aupc-immunizationEmpty"
         },
         "name": "No significant history",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisationList"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-immunizationList"
+        },
+        "name": "Immunizations list",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisationList"
+      },
+      {
+        "reference": {
+          "reference": "Observation/aupc-lmp1"
+        },
+        "name": "Last Menstrual Period",
+        "description": "Last Menstrual Period",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-LNMP"
       },
       {
         "reference": {
@@ -382,10 +460,40 @@
       },
       {
         "reference": {
+          "reference": "List/aupc-medicalHistoryList"
+        },
+        "name": "Medical History List",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList"
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/aupc-medicationstatement1"
+        },
+        "name": "Simvastatin",
+        "description": "Simvastatin",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicationStatement"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-medicineList"
+        },
+        "name": "No significant history",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList"
+      },
+      {
+        "reference": {
           "reference": "List/aupc-medicineListEmpty"
         },
         "name": "No significant history",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicineList"
+      },
+      {
+        "reference": {
+          "reference": "Observation/aupc-parity1"
+        },
+        "name": "Parity ",
+        "description": "Parity ",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-parity"
       },
       {
         "reference": {
@@ -401,6 +509,59 @@
         },
         "name": "Practitioner",
         "description": "Supporting practitioner for examples",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Procedure/aupc-procedure1"
+        },
+        "name": "Stent, coronary artery",
+        "description": "Stent, coronary artery",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/aupc-procedure2"
+        },
+        "name": "Plantar wart excision",
+        "description": "Plantar wart excision",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/aupc-procedureUltraSound"
+        },
+        "name": "Obstetric Ultrasound",
+        "description": "Obstetric Ultrasound",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Medication/medication1"
+        },
+        "name": "Simvastatin",
+        "description": "Simvastatin",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedication"
+      },
+      {
+        "reference": {
+          "reference": "Bundle/aupc-compositionAllergy"
+        },
+        "name": "aupc-compositionAllergy",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/aupc-compositionComplete"
+        },
+        "name": "aupc-compositionComplete",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/aupc-compositionEmpty"
+        },
+        "name": "aupc-compositionEmpty",
         "exampleBoolean": true
       }
     ],

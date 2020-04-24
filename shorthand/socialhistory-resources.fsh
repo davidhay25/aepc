@@ -8,7 +8,7 @@ Description: "This profile defines a social history list structure that includes
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialHistoryList"
 * status = #current
 * mode = #snapshot
-* entry.item only Reference(http://hl7.org/fhir/StructureDefinition/Observation)
+* entry.item only Reference(Observation)
 * entry.item MS
 * emptyReason MS
 

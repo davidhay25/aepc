@@ -1,0 +1,21 @@
+{
+  "resourceType": "List",
+  "id": "aupc-familyHistoryList",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistoryList"
+    ]
+  },
+  "status": "current",
+  "mode": "snapshot",
+  "subject": {
+    "reference": "Patient/aupc-patient1"
+  },
+  "entry": [
+    {
+      "item": {
+        "reference": "FamilyMemberHistory/aupc-familyHistory1"
+      }
+    }
+  ]
+}

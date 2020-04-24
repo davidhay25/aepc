@@ -39,8 +39,9 @@
   "code": {
     "coding": [
       {
+        "code": "138875005",
         "system": "http://snomed.info/sct",
-        "code": "138875005"
+        "display": "Asthma"
       }
     ]
   },
