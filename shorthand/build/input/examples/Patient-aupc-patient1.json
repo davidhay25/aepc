@@ -1,9 +1,26 @@
 {
   "resourceType": "Patient",
   "id": "aupc-patient1",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
+      "valueBoolean": true
+    }
+  ],
   "name": [
     {
-      "text": "John Doe"
+      "family": "Doe",
+      "given": [
+        "Jenny"
+      ],
+      "text": "Jenny Doe"
+    }
+  ],
+  "birthDate": "1989-01-02",
+  "gender": "female",
+  "address": [
+    {
+      "text": "23 Thule st"
     }
   ]
 }

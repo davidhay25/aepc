@@ -43,10 +43,10 @@ Description: "The gestational age from an ultrasound scan"
 * partOf ^slicing.rules = #open
 * partOf 1..1
 //todo - referencing by profile doesn't seem to work...
-//* partOf contains ultrasoundScan 1..1
+* partOf contains ultrasoundScan 1..1
 //* partOf[ultrasoundScan] only Reference(Procedure)
 //* partOf[ultrasoundScan] only Reference(https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure-UltrasoundScanObstetric)
-//*  partOf[ultrasoundScan] only Reference(AUPrimaryCareProcedure-UltrasoundScanObstetric)
+*  partOf[ultrasoundScan] only Reference(AUPrimaryCareProcedure-UltrasoundScanObstetric)
 
 * status = #final
 * code.coding ^slicing.discriminator.type = #value
@@ -73,15 +73,15 @@ Description: "The date that delivery is due. Method of estimation not specified.
 * status = #final
 
 
-/* todo - generates a sushi error
+// todo - generates a sushi error
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open
 * code.coding contains sliceCoding 1..1
 * code.coding[sliceCoding] from http://aehrc.com/valueset/expecteddateofdeliverytypes (required)
-*/
 
-* code.coding from http://aehrc.com/valueset/expecteddateofdeliverytypes (preferred)
+
+//* code.coding from http://aehrc.com/valueset/expecteddateofdeliverytypes (preferred)
 
 * subject 1..1
 

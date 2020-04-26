@@ -6,13 +6,22 @@ Alias: $SNOMED = http://snomed.info/sct
 Alias: $LOINC = http://loinc.org
 
 
+
 Instance: aupc-patient1
 InstanceOf: Patient
 //BaseType: Patient 
 Description: "Supporting patient for examples"
 Title: "Patient"
 
-* name.text = "John Doe"
+* extension[patient-interpreterRequired].valueBoolean = true
+
+* name.family = "Doe"
+* name.given = "Jenny"
+* name.text = "Jenny Doe"
+* birthDate = "1989-01-02"
+* gender = #female
+
+* address.text = "23 Thule st"
 
 Instance: aupc-practitioner1
 InstanceOf: Practitioner

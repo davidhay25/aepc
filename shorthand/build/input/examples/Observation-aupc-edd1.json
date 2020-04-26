@@ -17,8 +17,8 @@
   "code": {
     "coding": [
       {
-        "system": "http://snomed.info/sct",
         "code": "366322004",
+        "system": "http://snomed.info/sct",
         "display": "Finding of estimated date of delivery (finding)"
       }
     ]

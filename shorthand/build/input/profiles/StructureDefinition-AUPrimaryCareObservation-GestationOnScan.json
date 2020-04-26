@@ -63,6 +63,19 @@
         "max": "1"
       },
       {
+        "id": "Observation.partOf:ultrasoundScan",
+        "path": "Observation.partOf",
+        "sliceName": "ultrasoundScan",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedure-UltrasoundScanObstetric"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Observation.status",
         "path": "Observation.status",
         "patternCode": "final"

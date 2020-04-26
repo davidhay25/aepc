@@ -43,7 +43,9 @@ Title: "Gestation on scan "
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Gestation on scan </div>"
 * subject = Reference(aupc-patient1)
 
-* partOf = Reference(aupc-procedureUltraSound)
+//* partOf[ultrasoundScan] = Reference(aupc-procedureUltraSound)
+* partOf[ultrasoundScan] = Reference(aupc-edd1)
+//* partOf[ultrasoundScan] = Reference(aupc-patient1)
 
 * code.coding.system = $SNOMED
 * code.coding.code = #57036006 
@@ -68,10 +70,11 @@ Title: "Estimated Date of Delivery"
 * subject = Reference(aupc-patient1)
 
 
+* code.coding[sliceCoding] = $SNOMED#366322004 "Finding of estimated date of delivery (finding)"
 
-* code.coding.system = $SNOMED
-* code.coding.code = #366322004 
-* code.coding.display = "Finding of estimated date of delivery (finding)"
+//* code.coding.system = $SNOMED
+//* code.coding.code = #366322004 
+//* code.coding.display = "Finding of estimated date of delivery (finding)"
 
 * subject = Reference(aupc-patient1)
 * valueDateTime = "2020-10-01"

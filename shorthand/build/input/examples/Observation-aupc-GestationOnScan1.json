@@ -25,7 +25,7 @@
   },
   "partOf": [
     {
-      "reference": "Procedure/aupc-procedureUltraSound"
+      "reference": "Observation/aupc-edd1"
     }
   ],
   "valueQuantity": {
