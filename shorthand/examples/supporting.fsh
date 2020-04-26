@@ -6,14 +6,18 @@ Alias: $SNOMED = http://snomed.info/sct
 Alias: $LOINC = http://loinc.org
 
 
+//BaseType: Patient 
+
 
 Instance: aupc-patient1
 InstanceOf: Patient
-//BaseType: Patient 
 Description: "Supporting patient for examples"
 Title: "Patient"
 
+//needs a french interpreter
 * extension[patient-interpreterRequired].valueBoolean = true
+* communication.language.text = "French"
+* communication.language.preferred = true;
 
 * name.family = "Doe"
 * name.given = "Jenny"
@@ -22,6 +26,9 @@ Title: "Patient"
 * gender = #female
 
 * address.text = "23 Thule st"
+* telecom.system = #email
+* telecom.value = "jenny@myemailserver.com"
+* generalPractitioner = Reference(aupc-practitioner1)
 
 Instance: aupc-practitioner1
 InstanceOf: Practitioner
