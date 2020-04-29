@@ -10,9 +10,25 @@ Description: "This profile defines a patient administration details structure th
 * active = true
 * name 1..1
 * name MS
+
+//set the telecom phone and email as Must Support
 * telecom ^slicing.discriminator.type = #value
 * telecom ^slicing.discriminator.path = "system"
 * telecom ^slicing.rules = #open
+
+* telecom contains 
+    phone 0..1 and 
+    email 0..1
+
+* telecom[phone].system = #phone (exactly)
+* telecom[phone].system MS
+* telecom[phone].value MS
+
+* telecom[email].system = #email (exactly)
+* telecom[email].system MS
+* telecom[email].value MS
+
+/*
 * telecom contains phone 0..1
 * telecom[phone].system = #phone
 * telecom[phone].system MS
@@ -21,6 +37,10 @@ Description: "This profile defines a patient administration details structure th
 * telecom[email].system = #email
 * telecom[email].system MS
 * telecom[email].value MS
+*/
+
+
+
 * birthDate 1..1
 * birthDate MS
 * address 1..1

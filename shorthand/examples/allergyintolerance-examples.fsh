@@ -8,7 +8,7 @@ Description: "Oesophagitis caused by dairy food"
 Title: "Oesophagitis caused by dairy food"
 //BaseType: AllergyIntolerance 
 
-* text.status = #generated
+* text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Oesophagitis</div>"
 * clinicalStatus.coding = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
 * clinicalStatus.text = "active"
@@ -31,7 +31,7 @@ Title: "Peanut allergy"
 Description: "Urticaria as a result of a Peanut allergy"
 //BaseType: AllergyIntolerance 
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Peanut allergy</div>"
-* text.status = #generated
+* text.status = #additional
 * clinicalStatus.coding = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
 * clinicalStatus.text = "active"
 * verificationStatus.coding = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#unconfirmed "Unconfirmed"
@@ -56,7 +56,7 @@ Description: "Penicillin anaphylaxis"
 //* meta.versionId = "20060222130000"
 //* meta.lastUpdated = 2006-02-22T13:00:00+00:00
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Penicillin anaphylaxis</div>"
-* text.status = #generated
+* text.status = #additional
 * clinicalStatus.coding = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
 * clinicalStatus.text = "active"
 * verificationStatus.coding = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed "Confirmed"
@@ -83,7 +83,7 @@ Description: "A rash as a consequence to Alpha adrenergic blockers"
 //* meta.versionId = "20180412005602"
 //* meta.lastUpdated = 2018-04-12T00:56:02.153+00:00
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Rash to alpha blockers</div>"
-* text.status = #generated
+* text.status = #additional
 * clinicalStatus.coding = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
 * clinicalStatus.text = "active"
 * verificationStatus.coding = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed "Confirmed"
@@ -105,6 +105,9 @@ InstanceOf: AUPrimaryCareAllergyIntoleranceList
 //BaseType: List 
 Title: "Allergy List"
 Usage: #example
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No allerrgies or intolerances known</div>"
 
 * mode = #snapshot
 * status = #current

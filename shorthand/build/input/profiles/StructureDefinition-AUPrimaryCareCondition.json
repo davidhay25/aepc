@@ -51,12 +51,15 @@
         "id": "Condition.extension:ConditionCourse",
         "path": "Condition.extension",
         "sliceName": "ConditionCourse",
-        "max": "1"
-      },
-      {
-        "id": "Condition.extension:ConditionCourse.url",
-        "path": "Condition.extension.url",
-        "fixedUri": "ConditionCourse"
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://aehrc.com/fhir/StructureDefinition/condition-course"
+            ]
+          }
+        ]
       },
       {
         "id": "Condition.clinicalStatus",

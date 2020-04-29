@@ -328,14 +328,6 @@
       },
       {
         "reference": {
-          "reference": "Composition/aupc-compositionAllergy"
-        },
-        "name": "Example composition with allergy data",
-        "description": "The composition for a patient with an allergy list only. Other required sections are present with no data.\nThis shows ONLY required sectioons. ",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareComposition"
-      },
-      {
-        "reference": {
           "reference": "Composition/aupc-compositionComplete"
         },
         "name": "Example composition with all sections populated",
@@ -388,6 +380,21 @@
         },
         "name": "Family History List",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistoryList"
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-followUpList"
+        },
+        "name": "Followup list",
+        "exampleCanonical": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUpList"
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/aupc-followup1"
+        },
+        "name": "Blood Pressure review",
+        "description": "Review to check Blood Pressure",
+        "exampleCanonical": "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUp"
       },
       {
         "reference": {
@@ -501,7 +508,7 @@
         },
         "name": "Patient",
         "description": "Supporting patient for examples",
-        "exampleBoolean": true
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
       },
       {
         "reference": {
@@ -534,6 +541,21 @@
         "name": "Obstetric Ultrasound",
         "description": "Obstetric Ultrasound",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/aupc-smoker1"
+        },
+        "name": "Cigarette smoker",
+        "description": "is a cigarette smoker",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "List/aupc-socialHistoryList"
+        },
+        "name": "Social History resources",
+        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareSocialHistoryList"
       },
       {
         "reference": {

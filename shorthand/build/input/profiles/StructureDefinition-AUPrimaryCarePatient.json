@@ -89,7 +89,7 @@
         "id": "Patient.telecom:phone.system",
         "path": "Patient.telecom.system",
         "min": 1,
-        "patternCode": "phone",
+        "fixedCode": "phone",
         "mustSupport": true
       },
       {
@@ -107,7 +107,7 @@
         "id": "Patient.telecom:email.system",
         "path": "Patient.telecom.system",
         "min": 1,
-        "patternCode": "email",
+        "fixedCode": "email",
         "mustSupport": true
       },
       {

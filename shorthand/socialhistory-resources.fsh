@@ -1,5 +1,7 @@
 // PROFILES 
 
+
+// todo dh should there be a VS for the most common social media terms? eg smoker, heavy alcohol, obese...
 Profile: AUPrimaryCareSocialHistoryList
 Parent: List
 Id: AUPrimaryCareSocialHistoryList

@@ -32,6 +32,9 @@ InstanceOf: AUPrimaryCareMedication
 Description: "Simvastatin"
 Title: "Simvastatin"
 
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Simvastatin</div>"
+
 * code = http://oridashi.com.au/system/code/medicaldirectordrug#22138 "SIMVASTATIN 10mg Tablet"
 * code.text = "SIMVASTATIN 10mg Tablet"
 * code.coding[1] = $SNOMED#28211011000036108 "simvastatin 10 mg tablet, 30"
@@ -49,6 +52,11 @@ InstanceOf: AUPrimaryCareMedicineList
 //BaseType: List 
 Title: "No significant history"
 Usage: #example
+
+* subject = Reference(aupc-patient1)
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No significant medical history</div>"
 
 * mode = #snapshot
 * status = #current

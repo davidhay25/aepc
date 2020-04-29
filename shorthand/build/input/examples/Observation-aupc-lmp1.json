@@ -8,7 +8,7 @@
   },
   "status": "final",
   "text": {
-    "status": "generated",
+    "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Last Menstrual Period</div>"
   },
   "subject": {
@@ -17,9 +17,7 @@
   "code": {
     "coding": [
       {
-        "system": "http://snomed.info/sct",
-        "code": "366322004",
-        "display": "Finding of estimated date of delivery (finding)"
+        "system": "366322004"
       }
     ]
   },

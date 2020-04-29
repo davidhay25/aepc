@@ -17,15 +17,19 @@
     ]
   },
   "title": "Practice to Practice Patient Summary",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergies only</div>"
+  },
   "author": [
     {
       "reference": "Practitioner/aupc-practitioner1",
-      "display": "John Doe"
+      "display": "Marcus Welby"
     }
   ],
   "subject": {
     "reference": "Patient/aupc-patient1",
-    "display": "Marcus Welby"
+    "display": "John Doe"
   },
   "date": "2020-04-21",
   "section": [
@@ -80,7 +84,7 @@
           {
             "code": "41291-6",
             "system": "http://loinc.org",
-            "display": "Immunizations"
+            "display": "Immunization"
           }
         ]
       },
@@ -158,6 +162,46 @@
         },
         {
           "reference": "Observation/aupc-lmp1"
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "29762-2",
+            "system": "http://loinc.org",
+            "display": "Social History Narrative"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Social History</div>",
+        "status": "generated"
+      },
+      "entry": [
+        {
+          "reference": "List/aupc-socialHistoryList"
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "69730-02",
+            "system": "http://loinc.org",
+            "display": "Follow ups"
+          }
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Follow ups</div>",
+        "status": "generated"
+      },
+      "entry": [
+        {
+          "reference": "List/aupc-followUpList"
         }
       ]
     }

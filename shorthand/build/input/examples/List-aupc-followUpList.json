@@ -1,16 +1,16 @@
 {
   "resourceType": "List",
-  "id": "aupc-familyHistoryList",
+  "id": "aupc-followUpList",
   "meta": {
     "profile": [
-      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFamilyMemberHistoryList"
+      "http://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUpList"
     ]
   },
   "status": "current",
   "mode": "snapshot",
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Father with diabetes</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">3 allergies</div>"
   },
   "subject": {
     "reference": "Patient/aupc-patient1"
@@ -18,7 +18,7 @@
   "entry": [
     {
       "item": {
-        "reference": "FamilyMemberHistory/aupc-familyHistory1"
+        "reference": "CarePlan/aupc-followup1"
       }
     }
   ]

@@ -1,23 +1,24 @@
 //base examples used by others
 //note that the BaseType: is used to create the link to the example in the IG so do't delete them!
 
-//Aliases
+//Aliases - will be available to all 
 Alias: $SNOMED = http://snomed.info/sct
 Alias: $LOINC = http://loinc.org
 
-
-//BaseType: Patient 
-
-
 Instance: aupc-patient1
-InstanceOf: Patient
+InstanceOf: AUPrimaryCarePatient
+//BaseType: Patient 
 Description: "Supporting patient for examples"
 Title: "Patient"
 
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>French speaking patient. Needs interpreter</div>"
+
 //needs a french interpreter
 * extension[patient-interpreterRequired].valueBoolean = true
+
 * communication.language.text = "French"
-* communication.language.preferred = true;
+* communication.preferred = true
 
 * name.family = "Doe"
 * name.given = "Jenny"
@@ -28,6 +29,7 @@ Title: "Patient"
 * address.text = "23 Thule st"
 * telecom.system = #email
 * telecom.value = "jenny@myemailserver.com"
+
 * generalPractitioner = Reference(aupc-practitioner1)
 
 Instance: aupc-practitioner1
@@ -35,6 +37,9 @@ InstanceOf: Practitioner
 //BaseType: Practitioner 
 Description: "Supporting practitioner for examples"
 Title: "Practitioner"
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Dr Marcus Welby</div>"
 
 * name.text = "Marcus Welby"
 
@@ -45,6 +50,9 @@ InstanceOf: AUPrimaryCareMedicalHistoryList
 //BaseType: List 
 Title: "No significant history"
 Usage: #example
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No significant medical history known</div>"
 
 * mode = #snapshot
 * status = #current
@@ -57,6 +65,9 @@ InstanceOf: AUPrimaryCareAllergyIntoleranceList
 Title: "No significant history"
 Usage: #example
 
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No allergies or adverse reactions known</div>"
+
 * mode = #snapshot
 * status = #current
 * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#nilknown "Nil Known"
@@ -67,6 +78,9 @@ InstanceOf: AUPrimaryCareImmunisationList
 Title: "No significant history"
 Usage: #example
 
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No Immunizations known</div>"
+
 * mode = #snapshot
 * status = #current
 * emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#nilknown "Nil Known"
@@ -76,6 +90,9 @@ InstanceOf: AUPrimaryCareMedicineList
 //BaseType: List 
 Title: "No significant history"
 Usage: #example
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No Medications known</div>"
 
 * mode = #snapshot
 * status = #current

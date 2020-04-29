@@ -1,0 +1,20 @@
+{
+  "resourceType": "Observation",
+  "id": "aupc-smoker1",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cigarette smoker</div>"
+  },
+  "status": "complete",
+  "subject": {
+    "reference": "Patient/aupc-patient1"
+  },
+  "effectiveDateTime": "2020-04-01",
+  "code": {
+    "coding": [
+      {
+        "system": "65568007"
+      }
+    ]
+  }
+}

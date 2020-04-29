@@ -6,7 +6,7 @@ InstanceOf: AUPrimaryCareImmunisation
 Description: "MMR"
 Title: "MMR Vaccination"
 
-* text.status = #generated
+* text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>MMR</div>"
 
 * status = #completed
@@ -21,7 +21,7 @@ InstanceOf: AUPrimaryCareImmunisation
 Description: "MMR"
 Title: "MMR Vaccination"
 
-* text.status = #generated
+* text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>MMR</div>"
 
 * status = #completed
@@ -37,7 +37,7 @@ InstanceOf: AUPrimaryCareImmunisation
 Description: "Hepatitis "
 Title: "Hepatitis"
 
-* text.status = #generated
+* text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Hepatitis</div>"
 
 * status = #completed
@@ -62,6 +62,9 @@ InstanceOf: AUPrimaryCareImmunisationList
 //BaseType: List 
 Title: "Immunizations list"
 Usage: #example
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>3 allergies</div>"
 
 * mode = #snapshot
 * status = #current

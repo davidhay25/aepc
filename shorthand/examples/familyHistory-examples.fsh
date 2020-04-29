@@ -7,7 +7,7 @@ InstanceOf: AUPrimaryCareFamilyMemberHistory
 Description: "Father with diabetes"
 Title: "Father with diabetes"
 
-* text.status = #generated
+* text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Father with diabetes</div>"
 
 * status = #completed
@@ -27,6 +27,9 @@ InstanceOf: AUPrimaryCareFamilyMemberHistoryList
 //BaseType: List 
 Title: "Family History List"
 Usage: #example
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Father with diabetes</div>"
 
 * mode = #snapshot
 * status = #current

@@ -22,7 +22,7 @@ InstanceOf: AUPrimaryCareParity
 Description: "Parity "
 Title: "Parity "
 
-* text.status = #generated
+* text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Parity </div>"
 
 
@@ -39,7 +39,7 @@ InstanceOf: AUPrimaryCareObservation-GestationOnScan
 Description: "Gestation on scan"
 Title: "Gestation on scan "
 
-* text.status = #generated
+* text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Gestation on scan </div>"
 * subject = Reference(aupc-patient1)
 
@@ -65,7 +65,7 @@ InstanceOf: AUPrimaryCareObservation-EDD
 Description: "Estimated Date of Delivery"
 Title: "Estimated Date of Delivery"
 
-* text.status = #generated
+* text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Estimated Date of Delivery</div>"
 * subject = Reference(aupc-patient1)
 
@@ -88,17 +88,21 @@ InstanceOf: AUPrimaryCareObservation-LNMP
 Description: "Last Menstrual Period"
 Title: "Last Menstrual Period"
 
-* text.status = #generated
+* text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Last Menstrual Period</div>"
 * subject = Reference(aupc-patient1)
 
 
-* code.coding.system = $SNOMED
-* code.coding.code = #366322004 
-* code.coding.display = "Finding of estimated date of delivery (finding)"
+* code.coding.system = $SNOMED#366322004  "Finding of estimated date of delivery (finding)"
+//* code.coding.code = #366322004 
+//* code.coding.display = "Finding of estimated date of delivery (finding)"
 
 * subject = Reference(aupc-patient1)
 * valueDateTime = "2019-10-01"
 * effectiveDateTime = "2020-04-01"
 
-//LastNormalMenstrualPeriod
+//smoker
+
+
+	
+

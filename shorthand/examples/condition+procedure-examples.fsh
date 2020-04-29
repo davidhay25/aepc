@@ -7,7 +7,7 @@ InstanceOf: AUPrimaryCareCondition
 Description: "Polio"
 Title: "Conformed diagnosis of Polio"
 
-* text.status = #generated
+* text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Polio</div>"
 
 * clinicalStatus.coding.system =  "http://terminology.hl7.org/CodeSystem/condition-clinical"
@@ -33,7 +33,7 @@ InstanceOf: AUPrimaryCareCondition
 Description: "Asthma"
 Title: "Conformed diagnosis of Asthma"
 
-* text.status = #generated
+* text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Ashma</div>"
 
 * clinicalStatus.coding.system =  "http://terminology.hl7.org/CodeSystem/condition-clinical"
@@ -60,7 +60,7 @@ InstanceOf: AUPrimaryCareProcedure
 Description: "Stent, coronary artery"
 Title: "Stent, coronary artery"
 
-* text.status = #generated
+* text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Stent, coronary artery</div>"
 * status = #completed
 * subject = Reference(aupc-patient1)
@@ -75,7 +75,7 @@ InstanceOf: AUPrimaryCareProcedure
 Description: "Plantar wart excision"
 Title: "Plantar wart excision"
 
-* text.status = #generated
+* text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Plantar wart excision</div>"
 * status = #completed
 * subject = Reference(aupc-patient1)
@@ -89,6 +89,9 @@ InstanceOf: AUPrimaryCareMedicalHistoryList
 //BaseType: List 
 Title: "Medical History List"
 Usage: #example
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Polio, asthma, warts and a stent</div>"
 
 * mode = #snapshot
 * status = #current

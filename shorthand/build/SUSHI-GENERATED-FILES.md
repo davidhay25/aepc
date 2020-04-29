@@ -25,7 +25,6 @@ lists those files generated from project configs or the contents in the ig-data 
 | input/examples/Bundle-aupc-compositionComplete.json         | copied    | ../ig-data/input/examples/Bundle-aupc-compositionComplete.json      |
 | input/examples/Bundle-aupc-compositionEmpty.json            | copied    | ../ig-data/input/examples/Bundle-aupc-compositionEmpty.json         |
 | input/includes/menu.xml                                     | copied    | ../ig-data/input/includes/menu.xml                                  |
-| input/pagecontent/.DS_Store                                 | copied    | ../ig-data/input/pagecontent/.DS_Store                              |
 | input/pagecontent/examples.md                               | copied    | ../ig-data/input/pagecontent/examples.md                            |
 | input/pagecontent/guidance.md                               | copied    | ../ig-data/input/pagecontent/guidance.md                            |
 | input/pagecontent/history.md                                | copied    | ../ig-data/input/pagecontent/history.md                             |

@@ -391,6 +391,41 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Composition.section:followUp",
+        "path": "Composition.section",
+        "sliceName": "followUp",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:followUp.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "patternUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:followUp.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "min": 1,
+        "fixedCode": "69730-0"
+      },
+      {
+        "id": "Composition.section:followUp.mode",
+        "path": "Composition.section.mode",
+        "patternCode": "snapshot"
+      },
+      {
+        "id": "Composition.section:followUp.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareFollowUpList"
+            ]
+          }
+        ],
+        "mustSupport": true
       }
     ]
   }

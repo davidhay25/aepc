@@ -11,8 +11,11 @@ Description: "This profile defines a follow up structure that includes core loca
 * title 1..1
 * title MS
 * period.start MS
-* note 0..1
+* note 0..1     //dh todo - this doesn't seem useful...
 * note MS
+
+//dh todo - excluded a number of the elements to 'ensure' this profile is used as expected (so recipients can be confident where dtata is)
+* activity 0..0     //don't use activity for this
 
 Profile: AUPrimaryCareFollowUpList
 Parent: List

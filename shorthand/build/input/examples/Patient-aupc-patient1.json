@@ -1,10 +1,27 @@
 {
   "resourceType": "Patient",
   "id": "aupc-patient1",
+  "meta": {
+    "profile": [
+      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCarePatient"
+    ]
+  },
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
       "valueBoolean": true
+    }
+  ],
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">French speaking patient. Needs interpreter</div>"
+  },
+  "communication": [
+    {
+      "language": {
+        "text": "French"
+      },
+      "preferred": true
     }
   ],
   "name": [
@@ -21,6 +38,17 @@
   "address": [
     {
       "text": "23 Thule st"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "jenny@myemailserver.com"
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "reference": "Practitioner/aupc-practitioner1"
     }
   ]
 }

@@ -1,6 +1,10 @@
 {
   "resourceType": "Procedure",
   "id": "aupc-procedureUltraSound",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Obstetric ultrasound</div>"
+  },
   "subject": {
     "reference": "Patient/aupc-patient1"
   },

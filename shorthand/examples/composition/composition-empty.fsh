@@ -14,6 +14,9 @@ Usage: #Example
 * contained[3] = medicineListEmpty
 */
 
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No known data</div>"
+
 * status = #final
 * type = http://loinc.org#11503-0 "Medical Records"
 * author = Reference(aupc-practitioner1)
@@ -32,7 +35,7 @@ Usage: #Example
 * section[adverseReactionList].text.status = #generated
 
 * section[vaccinationList].entry = Reference(aupc-immunizationEmpty) //defined in supporting.fsh
-* section[vaccinationList].code = http://loinc.org#41291-6 "Immunizations"
+* section[vaccinationList].code = http://loinc.org#41291-6 "Immunization"
 * section[vaccinationList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No known immunizations</div>"
 * section[vaccinationList].text.status = #generated
 

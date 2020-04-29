@@ -43,7 +43,8 @@ Description: "This profile defines a composition structure that includes core lo
     clinicalSynopsis 0..1 and
     familyHistory 0..1 and
     socialHistory 0..1 and
-    pregnancyHistory 0..1
+    pregnancyHistory 0..1 and 
+    followUp 0..1      //todo dhay added
 
 //* section 1..*
 * section.section 0..0          //can't have sub sections
@@ -53,7 +54,11 @@ Description: "This profile defines a composition structure that includes core lo
 * section[medicalHistoryList].code.coding.system = "http://loinc.org"
 * section[medicalHistoryList].code.coding.code = #11348-0 (exactly)
 * section[medicalHistoryList].mode = #snapshot
-* section[medicalHistoryList].entry only Reference(https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList | https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedureList | https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProblemList)
+//* section[medicalHistoryList].entry only Reference(https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareMedicalHistoryList | https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProcedureList | https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareProblemList)
+* section[medicalHistoryList].entry only Reference(AUPrimaryCareMedicalHistoryList | AUPrimaryCareProcedureList | AUPrimaryCareProblemList)
+
+
+
 * section[medicalHistoryList].entry MS
 
 //* section contains adverseReactionList 1..1
@@ -105,3 +110,11 @@ Description: "This profile defines a composition structure that includes core lo
 * section[pregnancyHistory].mode = #snapshot
 * section[pregnancyHistory].entry only Reference(Observation)
 * section[pregnancyHistory].entry MS
+
+//todo - added by DH
+//* section contains followups 0..1
+* section[followUp].code.coding.system = "http://loinc.org"
+* section[followUp].code.coding.code = #69730-0 (exactly)
+* section[followUp].mode = #snapshot
+* section[followUp].entry only Reference(AUPrimaryCareFollowUpList)
+* section[followUp].entry MS

@@ -17,6 +17,10 @@
     ]
   },
   "title": "Practice to Practice Patient Summary",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No known data</div>"
+  },
   "author": [
     {
       "reference": "Practitioner/aupc-practitioner1"
@@ -78,7 +82,7 @@
           {
             "code": "41291-6",
             "system": "http://loinc.org",
-            "display": "Immunizations"
+            "display": "Immunization"
           }
         ]
       },

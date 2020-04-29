@@ -8,12 +8,15 @@ This shows ONLY required sectioons.
 """
 Usage: #Example
 
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Allergies only</div>"
+
 * status = #final
 * type = $LOINC#11503-0 "Medical Records"
 * author = Reference(aupc-practitioner1)
-* author.display = "John Doe"
+* author.display = "Marcus Welby"
 * subject = Reference(aupc-patient1)
-* subject.display = "Marcus Welby"
+* subject.display = "John Doe"
 
 * date = "2020-04-21"
 
@@ -28,7 +31,7 @@ Usage: #Example
 * section[adverseReactionList].text.status = #generated
 
 * section[vaccinationList].entry = Reference(aupc-immunizationList) //defined in immunizations-examples.fsh
-* section[vaccinationList].code = $LOINC#41291-6 "Immunizations"
+* section[vaccinationList].code = $LOINC#41291-6 "Immunization"
 * section[vaccinationList].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Immunizations</div>"
 * section[vaccinationList].text.status = #generated
 
@@ -42,7 +45,7 @@ Usage: #Example
 * section[familyHistory].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Father with diabetes</div>"
 * section[familyHistory].text.status = #generated
 
-//Doesn't refer to a List - multiple Observations
+//Doesn't refer to a List - multiple Observations - todo should it?
 * section[pregnancyHistory].code = $LOINC#10163-4  "History of pregnancies"
 * section[pregnancyHistory].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>History of pregnancies</div>"
 * section[pregnancyHistory].text.status = #generated
@@ -52,9 +55,15 @@ Usage: #Example
 * section[pregnancyHistory].entry[3] = Reference(aupc-edd1) //defined in observation-examples.fsh
 * section[pregnancyHistory].entry[4] = Reference(aupc-lmp1) //defined in observation-examples.fsh
 
+//Social History
+* section[socialHistory].code = $LOINC#29762-2  "Social History Narrative"
+* section[socialHistory].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Social History</div>"
+* section[socialHistory].text.status = #generated
+* section[socialHistory].entry = Reference(aupc-socialHistoryList) //defined in socialhistory-examples.fsh
 
-
-
-
-
+//dh followups
+* section[followUp].code = $LOINC#69730-02  "Follow ups"
+* section[followUp].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Follow ups</div>"
+* section[followUp].text.status = #generated
+* section[followUp].entry = Reference(aupc-followUpList) //defined in socialhistory-examples.fsh
 

@@ -59,6 +59,11 @@
         "mustSupport": true
       },
       {
+        "id": "CarePlan.activity",
+        "path": "CarePlan.activity",
+        "max": "0"
+      },
+      {
         "id": "CarePlan.note",
         "path": "CarePlan.note",
         "max": "1",

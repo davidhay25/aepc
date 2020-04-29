@@ -4,9 +4,11 @@
 # echo "Applying IG fix..."
 # ./fixIG.js
 # echo "Fix complete.."
+# now is the time for all good men to com to the aid of the party.
+# interesting to see if the keyboard ssue occirs with an external keyboard.
 
 set -e
-java -jar input-cache/org.hl7.fhir.publisher.jar -ig ig.ini # -tx https://primarycare.ontoserver.csiro.au/fhir
+java -jar input-cache/org.hl7.fhir.publisher.jar -ig ig.ini -tx n/a  # -tx https://primarycare.ontoserver.csiro.au/fhir
 
 echo "zipping output..."
 

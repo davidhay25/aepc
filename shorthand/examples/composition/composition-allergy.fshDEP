@@ -7,7 +7,7 @@ The composition for a patient with an allergy list only. Other required sections
 This shows ONLY required sectioons. 
 """
 Usage: #Example
-* text.status = #generated
+* text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Patient with Alllergy list only</div>"
 
 
@@ -45,6 +45,9 @@ Instance: aupc-adverseReactionList
 InstanceOf: AUPrimaryCareAllergyIntoleranceList
 Title: "Allergy List"
 Usage: #example
+
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>4 allergies</div>"
 
 * mode = #snapshot
 * status = #current

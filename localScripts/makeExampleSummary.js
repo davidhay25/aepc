@@ -72,6 +72,9 @@ list.forEach(function(file) {
         let contents = fs.readFileSync(fullFileName).toString()
 
         let json = JSON.parse(contents,null,2)
+
+        delete json.meta
+
         let ref = json.resourceType + "/" + json.id
         hashResources[ref] = json
         //bundle.entry.push({resource:json})
@@ -115,6 +118,11 @@ function processComposition(comp) {
     //the document bundle
     let bundle = {resourceType : "Bundle", id:comp.id, type: 'document', entry:[]}
     bundle.entry.push({resource:comp,fullUrl:bundleServer+comp.resourceType + "/" + comp.id})
+
+    //a bundle must have a date and identifier
+    
+    bundle.identifier = comp.identifier;
+    bundle.timestamp = new Date().toISOString();
 
     let compLink = "[" + comp.id +"](Composition-" + comp.id + ".json.html)"
 
@@ -181,7 +189,11 @@ function processComposition(comp) {
                        // bundle.entry.push({resource:entryResource})
                         bundle.entry.push({resource:entryResource,fullUrl:bundleServer+entryResource.resourceType + "/" + entryResource.id})
 
-                        let text = getDivText(entryResource.text.div)
+                        let text = ""
+                        if (entryResource.text) {
+                            text = getDivText(entryResource.text.div)
+                        }
+                       
                         let link = entryResource.resourceType + '-' + entryResource.id + '.json.html'
                         let display = "[" + text + "](" + link + ")"
 

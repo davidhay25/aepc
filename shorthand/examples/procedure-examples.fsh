@@ -5,8 +5,11 @@ InstanceOf: Procedure //AUPrimaryCareProcedure-UltrasoundScanObstetric
 Description: "Obstetric Ultrasound"
 Title: "Obstetric Ultrasound"
 
+* text.status = #additional
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Obstetric ultrasound</div>"
+
 * subject = Reference(aupc-patient1)
-* status = #complete
+* status = #completed
 * code.coding.code = #268445003
 * code.coding.system = $SNOMED
 
