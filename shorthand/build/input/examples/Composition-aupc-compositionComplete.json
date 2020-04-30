@@ -21,6 +21,10 @@
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergies only</div>"
   },
+  "identifier": {
+    "system": "http://clinfhir.com/fhir/namingSystem/test",
+    "value": "testing"
+  },
   "author": [
     {
       "reference": "Practitioner/aupc-practitioner1",

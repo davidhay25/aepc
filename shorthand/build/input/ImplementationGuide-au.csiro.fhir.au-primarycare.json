@@ -434,7 +434,7 @@
         },
         "name": "Hepatitis",
         "description": "Hepatitis ",
-        "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation"
+        "exampleBoolean": true
       },
       {
         "reference": {
@@ -498,8 +498,8 @@
         "reference": {
           "reference": "Observation/aupc-parity1"
         },
-        "name": "Parity ",
-        "description": "Parity ",
+        "name": "Parity",
+        "description": "Parity",
         "exampleCanonical": "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareObservation-parity"
       },
       {

@@ -10,8 +10,8 @@
   "code": {
     "coding": [
       {
-        "code": "161732006",
         "system": "http://snomed.info/sct",
+        "code": "161732006",
         "display": "Gravidity"
       }
     ]

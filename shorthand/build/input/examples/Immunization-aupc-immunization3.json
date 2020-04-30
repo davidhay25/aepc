@@ -3,7 +3,7 @@
   "id": "aupc-immunization3",
   "meta": {
     "profile": [
-      "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation"
+      "http://hl7.org.au/fhir/StructureDefinition/au-immunization"
     ]
   },
   "text": {
@@ -13,36 +13,6 @@
   "status": "completed",
   "primarySource": true,
   "lotNumber": "EE3F243E",
-  "performer": [
-    {
-      "function": {
-        "coding": [
-          {
-            "code": "AP",
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
-            "display": "Administering Provider"
-          }
-        ]
-      },
-      "actor": {
-        "reference": "Practitioner/aupc-practitioner1"
-      }
-    },
-    {
-      "function": {
-        "coding": [
-          {
-            "code": "OP",
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
-            "display": "Ordering Provider"
-          }
-        ]
-      },
-      "actor": {
-        "reference": "Practitioner/aupc-practitioner1"
-      }
-    }
-  ],
   "vaccineCode": {
     "coding": [
       {

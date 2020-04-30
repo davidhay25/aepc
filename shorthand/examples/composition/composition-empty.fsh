@@ -18,6 +18,10 @@ Usage: #Example
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No known data</div>"
 
 * status = #final
+
+* identifier.system = "http://clinfhir.com/fhir/namingSystem/test"
+* identifier.value = "testingEmpty"
+
 * type = http://loinc.org#11503-0 "Medical Records"
 * author = Reference(aupc-practitioner1)
 * subject = Reference(aupc-patient1)

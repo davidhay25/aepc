@@ -9,11 +9,11 @@ Title: "Cigarette smoker"
 * text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Cigarette smoker</div>"
 
-* status = #complete
+* status = #final
 * subject = Reference(aupc-patient1)
 * effectiveDateTime = "2020-04-01"
 
-* code.coding.system = $SNOMED#65568007  "Cigarette smoker"
+* code.coding = $SNOMED#65568007  "Cigarette smoker"
 
 //The list that references all of the immunization resources 
 Instance: aupc-socialHistoryList
@@ -28,5 +28,4 @@ Usage: #example
 * mode = #snapshot
 * status = #current
 * subject = Reference(aupc-patient1)
-* entry.item = Reference(aupc-immunization1)
-* entry[1].item = Reference(aupc-smoker1)
+* entry.item = Reference(aupc-smoker1)

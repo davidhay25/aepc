@@ -32,7 +32,7 @@ Title: "MMR Vaccination"
 
 
 Instance: aupc-immunization3
-InstanceOf: AUPrimaryCareImmunisation
+InstanceOf: http://hl7.org.au/fhir/StructureDefinition/au-immunization //AUPrimaryCareImmunisation
 //BaseType: Immunization
 Description: "Hepatitis "
 Title: "Hepatitis"
@@ -44,12 +44,21 @@ Title: "Hepatitis"
 //todo - get amt code
 * primarySource = true
 * lotNumber = "EE3F243E"
+/*
+todo - generating a sushi error
+* performer[administeredBy].function = http://terminology.hl7.org/CodeSystem/v2-0443#AP "Administering Provider"
+* performer[administeredBy].function.text = "Administering Provider" 
+* performer[administeredBy].actor = Reference(aupc-practitioner1)
+
+
 
 * performer.function = http://terminology.hl7.org/CodeSystem/v2-0443#AP "Administering Provider"
 * performer.actor = Reference(aupc-practitioner1)
+
 * performer[1].function = http://terminology.hl7.org/CodeSystem/v2-0443#OP "Ordering Provider"
 * performer[1].actor = Reference(aupc-practitioner1)
 
+*/
 
 * vaccineCode = $SNOMED#396429000 "MMR vaccine"
 * occurrenceDateTime = "2020-02-10"

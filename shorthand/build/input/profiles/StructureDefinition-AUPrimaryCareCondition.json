@@ -92,6 +92,12 @@
         "mustSupport": true
       },
       {
+        "id": "Condition.code.coding:snomedCondition.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
         "id": "Condition.bodySite",
         "path": "Condition.bodySite",
         "mustSupport": true

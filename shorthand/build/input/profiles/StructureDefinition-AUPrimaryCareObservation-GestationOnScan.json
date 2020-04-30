@@ -92,17 +92,25 @@
           ],
           "rules": "open"
         },
-        "min": 1,
-        "max": "1"
+        "min": 1
       },
       {
         "id": "Observation.code.coding:gestationSnomed",
         "path": "Observation.code.coding",
         "sliceName": "gestationSnomed",
-        "patternCoding": {
-          "code": "57036006",
-          "system": "http://snomed.info/sct"
-        }
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:gestationSnomed.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:gestationSnomed.code",
+        "path": "Observation.code.coding.code",
+        "patternCode": "57036006"
       },
       {
         "id": "Observation.subject",

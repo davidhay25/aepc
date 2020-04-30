@@ -6,7 +6,8 @@ Id: AUPrimaryCareImmunisation
 Title: "AU Primary Care Immunisation"
 Description: "This profile defines an immunisation structure that includes core localisation concepts for use in an Australian primary care practice-to-practice record transfer context."
 * ^url = "https://aehrc.com/fhir/StructureDefinition/AUPrimaryCareImmunisation"
-* vaccineCode.coding[amtVaccineCode] MS
+
+* vaccineCode.coding[amtVaccineCode] MS     //this must be a slice defined in the parent
 * occurrence[x] MS
 * note.text MS
 

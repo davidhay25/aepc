@@ -5,7 +5,7 @@
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cigarette smoker</div>"
   },
-  "status": "complete",
+  "status": "final",
   "subject": {
     "reference": "Patient/aupc-patient1"
   },
@@ -13,7 +13,9 @@
   "code": {
     "coding": [
       {
-        "system": "65568007"
+        "code": "65568007",
+        "system": "http://snomed.info/sct",
+        "display": "Cigarette smoker"
       }
     ]
   }

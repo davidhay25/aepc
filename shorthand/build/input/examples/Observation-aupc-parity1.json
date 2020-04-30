@@ -10,9 +10,9 @@
   "code": {
     "coding": [
       {
-        "code": "364325004",
         "system": "http://snomed.info/sct",
-        "display": "Parity "
+        "code": "364325004",
+        "display": "Parity"
       }
     ]
   },

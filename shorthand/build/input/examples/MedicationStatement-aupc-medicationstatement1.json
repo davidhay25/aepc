@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Simvastatin</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Simvastatin 10mg daily</div>"
   },
   "status": "active",
   "contained": [
@@ -74,7 +74,7 @@
   },
   "dateAsserted": "2018-11-12",
   "informationSource": {
-    "reference": "practitioner1"
+    "reference": "Practitioner/aupc-practitioner1"
   },
   "reasonCode": [
     {
@@ -104,7 +104,7 @@
     }
   ],
   "medicationReference": {
-    "reference": "Medication/medication1"
+    "reference": "#medication1"
   },
   "subject": {
     "reference": "Patient/aupc-patient1"

@@ -7,12 +7,13 @@ Description: "Simvastatin"
 Title: "Simvastatin"
 
 * text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Simvastatin</div>"
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Simvastatin 10mg daily</div>"
 * status = #active
 * contained = medication1
+
 * effectivePeriod.start = "2018-11-12"
 * dateAsserted = "2018-11-12"
-* informationSource = Reference(practitioner1)
+* informationSource = Reference(aupc-practitioner1)
 * reasonCode = http://oridashi.com.au/system/code/medicaldirectorterm#hypet "Hypertension"
 * reasonCode.text = "Hypertension"
 
@@ -22,7 +23,7 @@ Title: "Simvastatin"
 * dosage.asNeededBoolean = true
 * dosage.route = http://oridashi.com.au/system/code/medicaldirectormedicationroute#PO "Oral - Swallowed"
 
-* medicationReference = Reference(medication1)
+* medicationReference.reference = "#medication1"
 * subject = Reference(aupc-patient1)
 
 

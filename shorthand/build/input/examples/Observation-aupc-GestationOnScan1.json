@@ -10,8 +10,8 @@
   "code": {
     "coding": [
       {
-        "code": "57036006",
         "system": "http://snomed.info/sct",
+        "code": "57036006",
         "display": "Gestation on scan"
       }
     ]
@@ -25,7 +25,7 @@
   },
   "partOf": [
     {
-      "reference": "Observation/aupc-edd1"
+      "reference": "Procedure/aupc-procedureUltraSound"
     }
   ],
   "valueQuantity": {

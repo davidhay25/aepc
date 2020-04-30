@@ -73,7 +73,7 @@ list.forEach(function(file) {
 
         let json = JSON.parse(contents,null,2)
 
-        delete json.meta
+        delete json.meta    //
 
         let ref = json.resourceType + "/" + json.id
         hashResources[ref] = json
@@ -115,6 +115,7 @@ fs.writeFileSync(outFileName2,outContents)      //This is the IG input
 //process the composition resource
 function processComposition(comp) {
     let arComposition = []
+    let hashResourceInDoc = {};     //used to ensure no duplications in doc
     //the document bundle
     let bundle = {resourceType : "Bundle", id:comp.id, type: 'document', entry:[]}
     bundle.entry.push({resource:comp,fullUrl:bundleServer+comp.resourceType + "/" + comp.id})
@@ -161,7 +162,7 @@ function processComposition(comp) {
     })
 
     arComposition.push("| Sections:  | | |")
-    //add the section
+    //add the sections
     comp.section.forEach(function(sect){
         let sectionDisplay=""
         sect.code.coding.forEach(function(coding){
@@ -183,11 +184,18 @@ function processComposition(comp) {
                 if (resource.emptyReason) {
                     arComposition.push("| | | Section is empty")  
                 } else {
+                    //iterate through the list contents
                     resource.entry.forEach(function(entry){
                         let entryResource = hashResources[entry.item.reference]
 
                        // bundle.entry.push({resource:entryResource})
-                        bundle.entry.push({resource:entryResource,fullUrl:bundleServer+entryResource.resourceType + "/" + entryResource.id})
+                       //only add each resource once
+                       let key = entryResource.type + "/" + entryResource.id
+                       if (! hashResourceInDoc[key]) {
+                            bundle.entry.push({resource:entryResource,fullUrl:bundleServer+entryResource.resourceType + "/" + entryResource.id})
+                            hashResourceInDoc[key] = true;
+                       }
+                        
 
                         let text = ""
                         if (entryResource.text) {

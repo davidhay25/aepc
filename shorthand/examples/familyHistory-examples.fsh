@@ -16,7 +16,6 @@ Title: "Father with diabetes"
 * relationship = $SNOMED#444295003 "Father of Subject"
 * bornDate = "1956"
 
-* estimatedAge = true
 * condition.code = $SNOMED#73211009 "Diabetes mellitus (disorder)"
 * condition.contributedToDeath = true
 

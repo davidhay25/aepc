@@ -19,8 +19,8 @@ Title: "Gravidity"
 Instance: aupc-parity1
 InstanceOf: AUPrimaryCareParity 
 //BaseType: Observation
-Description: "Parity "
-Title: "Parity "
+Description: "Parity"
+Title: "Parity"
 
 * text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Parity </div>"
@@ -28,7 +28,7 @@ Title: "Parity "
 
 * code.coding.system = $SNOMED
 * code.coding.code = #364325004 
-* code.coding.display = "Parity "
+* code.coding.display = "Parity"
 * subject = Reference(aupc-patient1)
 * valueInteger = 3
 
@@ -43,8 +43,8 @@ Title: "Gestation on scan "
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Gestation on scan </div>"
 * subject = Reference(aupc-patient1)
 
-//* partOf[ultrasoundScan] = Reference(aupc-procedureUltraSound)
-* partOf[ultrasoundScan] = Reference(aupc-edd1)
+* partOf[ultrasoundScan] = Reference(aupc-procedureUltraSound)
+//* partOf[ultrasoundScan] = Reference(aupc-edd1)
 //* partOf[ultrasoundScan] = Reference(aupc-patient1)
 
 * code.coding.system = $SNOMED
@@ -70,8 +70,8 @@ Title: "Estimated Date of Delivery"
 * subject = Reference(aupc-patient1)
 
 
-* code.coding[sliceCoding] = $SNOMED#366322004 "Finding of estimated date of delivery (finding)"
-
+//* code.coding[sliceCoding] = $SNOMED#366322004 "Finding of estimated date of delivery (finding)"
+* code.coding = $SNOMED#366322004 "Finding of estimated date of delivery (finding)"
 //* code.coding.system = $SNOMED
 //* code.coding.code = #366322004 
 //* code.coding.display = "Finding of estimated date of delivery (finding)"
@@ -93,7 +93,7 @@ Title: "Last Menstrual Period"
 * subject = Reference(aupc-patient1)
 
 
-* code.coding.system = $SNOMED#366322004  "Finding of estimated date of delivery (finding)"
+* code.coding = $SNOMED#248993009  "Finding of estimated date of delivery (finding)"
 //* code.coding.code = #366322004 
 //* code.coding.display = "Finding of estimated date of delivery (finding)"
 

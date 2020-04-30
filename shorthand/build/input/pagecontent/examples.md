@@ -26,7 +26,7 @@
 | | | | [Hepatitis](Immunization-aupc-immunization3.json.html)
 | | Medicine list
 | | | [*List resource*](List-aupc-medicineList.json.html)
-| | | | [Simvastatin](MedicationStatement-aupc-medicationstatement1.json.html)
+| | | | [Simvastatin 10mg daily](MedicationStatement-aupc-medicationstatement1.json.html)
 | | Family history list
 | | | [*List resource*](List-aupc-familyHistoryList.json.html)
 | | | | [Father with diabetes](FamilyMemberHistory-aupc-familyHistory1.json.html)
@@ -38,7 +38,6 @@
 | | | [Last Menstrual Period](Observation-aupc-lmp1.json.html)
 | | Social History Narrative
 | | | [*List resource*](List-aupc-socialHistoryList.json.html)
-| | | | [MMR](Immunization-aupc-immunization1.json.html)
 | | | | [Cigarette smoker](Observation-aupc-smoker1.json.html)
 | | Follow ups
 | | | [*List resource*](List-aupc-followUpList.json.html)
@@ -92,7 +91,7 @@
 | [AUPrimaryCareFollowUpList](StructureDefinition-AUPrimaryCareFollowUpList.html) | [aupc-followUpList](List-aupc-followUpList.json.html) | Followup list |  |
 | [AUPrimaryCareImmunisation](StructureDefinition-AUPrimaryCareImmunisation.html) | [aupc-immunization1](Immunization-aupc-immunization1.json.html) | MMR Vaccination | MMR |
 |  | [aupc-immunization2](Immunization-aupc-immunization2.json.html) | MMR Vaccination | MMR |
-|  | [aupc-immunization3](Immunization-aupc-immunization3.json.html) | Hepatitis | Hepatitis  |
+| [http://hl7.org.au/fhir/StructureDefinition/au-immunization //AUPrimaryCareImmunisation](StructureDefinition-http://hl7.org.au/fhir/StructureDefinition/au-immunization //AUPrimaryCareImmunisation.html) | [aupc-immunization3](Immunization-aupc-immunization3.json.html) | Hepatitis | Hepatitis  |
 | [AUPrimaryCareImmunisationList](StructureDefinition-AUPrimaryCareImmunisationList.html) | [aupc-immunizationList](List-aupc-immunizationList.json.html) | Immunizations list |  |
 |  | [aupc-immunizationEmpty](List-aupc-immunizationEmpty.json.html) | No significant history |  |
 | [AUPrimaryCareMedicationStatement //MedicationStatement //](StructureDefinition-AUPrimaryCareMedicationStatement //MedicationStatement //.html) | [aupc-medicationstatement1](MedicationStatement-aupc-medicationstatement1.json.html) | Simvastatin | Simvastatin |
@@ -100,7 +99,7 @@
 | [AUPrimaryCareMedicineList](StructureDefinition-AUPrimaryCareMedicineList.html) | [aupc-medicineList](List-aupc-medicineList.json.html) | No significant history |  |
 |  | [aupc-medicineListEmpty](List-aupc-medicineListEmpty.json.html) | No significant history |  |
 | [AUPrimaryCareGravidity ](StructureDefinition-AUPrimaryCareGravidity .html) | [aupc-gravidity1](Observation-aupc-gravidity1.json.html) | Gravidity | Gravidity |
-| [AUPrimaryCareParity ](StructureDefinition-AUPrimaryCareParity .html) | [aupc-parity1](Observation-aupc-parity1.json.html) | Parity  | Parity  |
+| [AUPrimaryCareParity ](StructureDefinition-AUPrimaryCareParity .html) | [aupc-parity1](Observation-aupc-parity1.json.html) | Parity | Parity |
 | [AUPrimaryCareObservation-GestationOnScan](StructureDefinition-AUPrimaryCareObservation-GestationOnScan.html) | [aupc-gestationOnScan1](Observation-aupc-gestationOnScan1.json.html) | Gestation on scan  | Gestation on scan |
 | [AUPrimaryCareObservation-EDD](StructureDefinition-AUPrimaryCareObservation-EDD.html) | [aupc-edd1](Observation-aupc-edd1.json.html) | Estimated Date of Delivery | Estimated Date of Delivery |
 | [AUPrimaryCareObservation-LNMP](StructureDefinition-AUPrimaryCareObservation-LNMP.html) | [aupc-lmp1](Observation-aupc-lmp1.json.html) | Last Menstrual Period | Last Menstrual Period |

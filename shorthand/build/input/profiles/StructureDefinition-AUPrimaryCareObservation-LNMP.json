@@ -70,22 +70,35 @@
       {
         "id": "Observation.code.coding:lnmpSnomed",
         "path": "Observation.code.coding",
-        "sliceName": "lnmpSnomed",
-        "min": 0,
-        "patternCoding": {
-          "code": "248993009",
-          "system": "http://snomed.info/sct"
-        }
+        "sliceName": "lnmpSnomed"
+      },
+      {
+        "id": "Observation.code.coding:lnmpSnomed.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:lnmpSnomed.code",
+        "path": "Observation.code.coding.code",
+        "patternCode": "248993009"
       },
       {
         "id": "Observation.code.coding:lnmpLoinc",
         "path": "Observation.code.coding",
         "sliceName": "lnmpLoinc",
-        "min": 0,
-        "patternCoding": {
-          "code": "8665-2",
-          "system": "http://loinc.org"
-        }
+        "min": 0
+      },
+      {
+        "id": "Observation.code.coding:lnmpLoinc.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.code.coding:lnmpLoinc.code",
+        "path": "Observation.code.coding.code",
+        "patternCode": "8665-2"
       },
       {
         "id": "Observation.subject",
